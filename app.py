@@ -29,10 +29,6 @@ students = [
     }
 ]
 
-@app.route('/')
-def home():
-    return "Welcome to Student Enrollment System"
-
 @app.route('/test-data')
 def get_all_students():
     return jsonify(students)
