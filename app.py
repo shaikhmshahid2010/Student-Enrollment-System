@@ -1,4 +1,3 @@
-# Import mein render_template lazmi add karein
 from flask import Flask, jsonify, request, render_template
 
 app = Flask(__name__)
@@ -10,11 +9,15 @@ students = [
     {"id": 4, "name": "Ayesha Umar", "course": "Data science", "email": "ayesha@example.com"}
 ]
 
-@app.route('/students-page', methods=['GET'])
-def students_page():
-    return render_template('students.html', students=students)
-
-
+@app.route('/students-page/<int:student_id>', methods=['GET'])
+def student_profile_page(student_id):
+    selected_student = None
+    for student in students:
+        if student["id"] == student_id:
+            selected_student = student
+            break
+            
+    return render_template('student_profile.html', student=selected_student)
 
 
 if __name__ == '__main__':
