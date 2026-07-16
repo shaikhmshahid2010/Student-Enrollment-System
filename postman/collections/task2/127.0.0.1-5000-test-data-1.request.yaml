@@ -1,0 +1,12 @@
+$kind: http-request
+name: 127.0.0.1:5000/test-data
+description: ""
+url: http://127.0.0.1:5000/students?course=data sci
+method: GET
+queryParams:
+  course: data sci
+body:
+  type: graphql
+  content:
+    query: ""
+order: 4211385590799512

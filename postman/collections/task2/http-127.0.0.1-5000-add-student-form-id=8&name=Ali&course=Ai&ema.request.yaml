@@ -1,0 +1,46 @@
+$kind: http-request
+name: http://127.0.0.1:5000/add-student-form?id=8&name=Ali&course=Ai&email=ali@example.com
+description: ""
+url: http://127.0.0.1:5000/add-student-form?id=8&name=Ali&course=Ai&email=ali@example.com
+method: POST
+queryParams:
+  - key: id
+    value: "8"
+    disabled: false
+    description: ""
+  - key: name
+    value: Ali
+    disabled: false
+    description: ""
+  - key: course
+    value: Ai
+    disabled: false
+    description: ""
+  - key: email
+    value: ali@example.com
+    disabled: false
+    description: ""
+body:
+  type: formdata
+  content:
+    - type: text
+      key: id
+      value: "8"
+      description: ""
+      disabled: false
+    - type: text
+      key: name
+      value: Ali
+      description: ""
+      disabled: false
+    - type: text
+      key: course
+      value: Ai
+      description: ""
+      disabled: false
+    - type: text
+      key: email
+      value: ali@example.com
+      description: ""
+      disabled: false
+order: 4349669373139633

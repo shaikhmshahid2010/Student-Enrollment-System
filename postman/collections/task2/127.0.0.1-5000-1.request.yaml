@@ -1,0 +1,10 @@
+$kind: http-request
+name: 127.0.0.1:5000
+description: ""
+url: 127.0.0.1:5000/test-data
+method: GET
+body:
+  type: graphql
+  content:
+    query: ""
+order: 2935819092463562

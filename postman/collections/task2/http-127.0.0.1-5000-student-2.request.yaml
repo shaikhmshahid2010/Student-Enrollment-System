@@ -1,0 +1,29 @@
+$kind: http-request
+name: http://127.0.0.1:5000/student/2
+description: ""
+url: http://127.0.0.1:5000/student/2
+method: GET
+body:
+  type: formdata
+  content:
+    - type: text
+      key: id
+      value: "8"
+      description: ""
+      disabled: false
+    - type: text
+      key: name
+      value: Ali
+      description: ""
+      disabled: false
+    - type: text
+      key: course
+      value: Ai
+      description: ""
+      disabled: false
+    - type: text
+      key: email
+      value: ali@example.com
+      description: ""
+      disabled: false
+order: 4460917886396847

@@ -1,0 +1,19 @@
+$kind: http-request
+name: http://127.0.0.1:5000/add-student-json
+description: ""
+url: http://127.0.0.1:5000/add-student-json
+method: POST
+body:
+  type: json
+  content: "{\r
+
+    \  \"name\":\"shahid\",\r
+
+    \  \"course\":\"AI\",\r
+
+    \   \"email\":\"shahid@123\"\r
+
+    \r
+
+    }"
+order: 4492929440798989
